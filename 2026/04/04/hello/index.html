@@ -7,25 +7,25 @@
     <meta name="author" content="mingyiaz" />
 
     <meta name="keywords" content="" />
-    <link rel="canonical" href="http://example.com/2026/04/04/hello/" />
-    <meta name="description" content="这个博客是干嘛的这个博客其实没什么特别的定位，没有高超的硬核技术，也没有高深的哲理文章，这就是我用来随便记东西的地方。 所以这里的内容应该会比较杂。 可能有时候是学习笔记，比如我将来上大学抑或是当下学习的；有时候是一些折腾记录，比如环境、博客、乱七八糟的问题；也可能什么都不是，就是突然想到点什么，随手写下来，甚至可能有点莫名其妙。 这里的东西不会专门整理成给别人看的那种文章，大多数时候就是写给我自">
+    <link rel="canonical" href="http://mingyiaz.github.io/2026/04/04/hello/" />
+    <meta name="description" content="这个博客是干嘛的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第一篇博客">
-<meta property="og:url" content="http://example.com/2026/04/04/hello/index.html">
+<meta property="og:url" content="http://mingyiaz.github.io/2026/04/04/hello/index.html">
 <meta property="og:site_name" content="mingyiazの博客">
-<meta property="og:description" content="这个博客是干嘛的这个博客其实没什么特别的定位，没有高超的硬核技术，也没有高深的哲理文章，这就是我用来随便记东西的地方。 所以这里的内容应该会比较杂。 可能有时候是学习笔记，比如我将来上大学抑或是当下学习的；有时候是一些折腾记录，比如环境、博客、乱七八糟的问题；也可能什么都不是，就是突然想到点什么，随手写下来，甚至可能有点莫名其妙。 这里的东西不会专门整理成给别人看的那种文章，大多数时候就是写给我自">
+<meta property="og:description" content="这个博客是干嘛的">
 <meta property="og:locale">
-<meta property="og:image" content="http://example.com/images/avatar.gif">
+<meta property="og:image" content="http://mingyiaz.github.io/images/avatar.gif">
 <meta property="article:published_time" content="2026-04-03T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-04-05T03:37:19.358Z">
+<meta property="article:modified_time" content="2026-04-16T09:59:56.617Z">
 <meta property="article:author" content="mingyiaz">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/images/avatar.gif">
+<meta name="twitter:image" content="http://mingyiaz.github.io/images/avatar.gif">
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     />
-    <link rel="icon" href="/images/avatar.gif" />
+    <link rel="icon" href="/images/headf.jpg" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.38/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -48,6 +48,11 @@
 />
 <script src="/js/lib/highlight.js"></script>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" />
+<script src="/js/lib/math.js"></script>
 
 
 <script src="/js/lib/preview.js"></script>
@@ -73,7 +78,7 @@
                 <div id="loading-circle">
                     <h2>LOADING</h2>
                     <p>正在前往...</p>
-                    <img src="/images/loading.gif" />
+                    <img src="/images/output.gif" />
                 </div>
             </div>
         </transition>
@@ -101,11 +106,6 @@
         <a href="/categories">
             <i class="fa-solid fa-bookmark fa-fw"></i>
             <span>&ensp;分类</span>
-        </a>
-        
-        <a href="/tags">
-            <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;标签</span>
         </a>
         
     </nav>
@@ -153,15 +153,6 @@
                     </div>
                 </a>
                 
-                <a href="/tags">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">标签</div>
-                    </div>
-                </a>
-                
             </div>
         </transition>
     </nav>
@@ -172,7 +163,7 @@
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             
-<div class="article" data-category="" style="--tx-post-bg:#fffdfa;--tx-post-text:#1e3e3f;--tx-cat-bg:#eef2f7;--tx-cat-text:#4f6370">
+<div class="article" data-category="" style="--tx-post-bg:#fffdfa;--tx-post-text:#4f6370;--tx-cat-bg:#eef2f7;--tx-cat-text:#4f6370;--tx-title-color:#615B7E">
     <div>
         <h1>第一篇博客</h1>
     </div>
@@ -188,7 +179,7 @@
     </div>
     
     <div class="content" v-pre>
-        <h1 id="这个博客是干嘛的"><a href="#这个博客是干嘛的" class="headerlink" title="这个博客是干嘛的"></a>这个博客是干嘛的</h1><p>这个博客其实没什么特别的定位，没有高超的硬核技术，也没有高深的哲理文章，这就是我用来随便记东西的地方。</p>
+        <h1 id="这个博客是干嘛的" style="color:#615B7E;font-size:26px;"><a href="#这个博客是干嘛的" class="headerlink" title="这个博客是干嘛的"></a>这个博客是干嘛的</h1><p>这个博客其实没什么特别的定位，没有高超的硬核技术，也没有高深的哲理文章，这就是我用来随便记东西的地方。</p>
 <p>所以这里的内容应该会比较杂。</p>
 <p>可能有时候是学习笔记，比如我将来上大学抑或是当下学习的；<br>有时候是一些折腾记录，比如环境、博客、乱七八糟的问题；<br>也可能什么都不是，就是突然想到点什么，随手写下来，甚至可能有点莫名其妙。</p>
 <p>这里的东西不会专门整理成给别人看的那种文章，大多数时候就是写给我自己看的。有的可能很短，有的可能没什么逻辑，有的甚至写完过几天我自己都得重新看一遍。</p>

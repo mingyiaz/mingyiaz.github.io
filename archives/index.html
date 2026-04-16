@@ -7,21 +7,21 @@
     <meta name="author" content="mingyiaz" />
 
     <meta name="keywords" content="" />
-    <link rel="canonical" href="http://example.com/archives/index.html" />
+    <link rel="canonical" href="http://mingyiaz.github.io/archives/index.html" />
     <meta property="og:type" content="website">
 <meta property="og:title" content="mingyiazの博客">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:url" content="http://mingyiaz.github.io/archives/index.html">
 <meta property="og:site_name" content="mingyiazの博客">
 <meta property="og:locale">
-<meta property="og:image" content="http://example.com/images/avatar.gif">
+<meta property="og:image" content="http://mingyiaz.github.io/images/avatar.gif">
 <meta property="article:author" content="mingyiaz">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/images/avatar.gif">
+<meta name="twitter:image" content="http://mingyiaz.github.io/images/avatar.gif">
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     />
-    <link rel="icon" href="/images/avatar.gif" />
+    <link rel="icon" href="/images/headf.jpg" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.38/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -45,6 +45,11 @@
 <script src="/js/lib/highlight.js"></script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
 
 <script src="/js/lib/preview.js"></script>
 
@@ -65,7 +70,7 @@
                 <div id="loading-circle">
                     <h2>LOADING</h2>
                     <p>正在前往...</p>
-                    <img src="/images/loading.gif" />
+                    <img src="/images/output.gif" />
                 </div>
             </div>
         </transition>
@@ -93,11 +98,6 @@
         <a href="/categories">
             <i class="fa-solid fa-bookmark fa-fw"></i>
             <span>&ensp;分类</span>
-        </a>
-        
-        <a href="/tags">
-            <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;标签</span>
         </a>
         
     </nav>
@@ -145,15 +145,6 @@
                     </div>
                 </a>
                 
-                <a href="/tags">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">标签</div>
-                    </div>
-                </a>
-                
             </div>
         </transition>
     </nav>
@@ -167,6 +158,31 @@
 <div id="archives">
     
     <div id="timeline-wrap" ref="timeline">
+        
+        <div class="timeline" data-title="前记">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/6/11</div>
+                <a href="/2025/06/11/preface/">
+                    <h3>前记</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                    <span class="category">
+                        <a href="/categories/diary/" style="color:#c0c0c0">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            diary
+                        </a>
+                    </span>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
         
         <div class="timeline" data-title="第一篇博客">
             <div class="timeline-tail"></div>

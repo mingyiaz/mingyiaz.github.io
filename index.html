@@ -7,21 +7,21 @@
     <meta name="author" content="mingyiaz" />
 
     <meta name="keywords" content="" />
-    <link rel="canonical" href="http://example.com/index.html" />
+    <link rel="canonical" href="http://mingyiaz.github.io/index.html" />
     <meta property="og:type" content="website">
 <meta property="og:title" content="mingyiazの博客">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://mingyiaz.github.io/index.html">
 <meta property="og:site_name" content="mingyiazの博客">
 <meta property="og:locale">
-<meta property="og:image" content="http://example.com/images/avatar.gif">
+<meta property="og:image" content="http://mingyiaz.github.io/images/avatar.gif">
 <meta property="article:author" content="mingyiaz">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/images/avatar.gif">
+<meta name="twitter:image" content="http://mingyiaz.github.io/images/avatar.gif">
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     />
-    <link rel="icon" href="/images/avatar.gif" />
+    <link rel="icon" href="/images/headf.jpg" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.38/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -45,6 +45,11 @@
 <script src="/js/lib/highlight.js"></script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
 
 <script src="/js/lib/preview.js"></script>
 
@@ -67,7 +72,7 @@
                 <div id="loading-circle">
                     <h2>LOADING</h2>
                     <p>正在前往...</p>
-                    <img src="/images/loading.gif" />
+                    <img src="/images/output.gif" />
                 </div>
             </div>
         </transition>
@@ -95,11 +100,6 @@
         <a href="/categories">
             <i class="fa-solid fa-bookmark fa-fw"></i>
             <span>&ensp;分类</span>
-        </a>
-        
-        <a href="/tags">
-            <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;标签</span>
         </a>
         
     </nav>
@@ -147,15 +147,6 @@
                     </div>
                 </a>
                 
-                <a href="/tags">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">标签</div>
-                    </div>
-                </a>
-                
             </div>
         </transition>
     </nav>
@@ -169,7 +160,7 @@
     <div
         id="home-background"
         ref="homeBackground"
-        data-images="/images/bg-main.jpg"
+        data-images="/images/bg-main.png"
     ></div>
     <div id="home-info" @click="homeClick">
         <span class="loop"></span>
@@ -194,7 +185,7 @@
         
 
 
-<div class="post" data-category="" style="--tx-post-bg:#fffdfa;--tx-post-text:#1e3e3f;--tx-cat-bg:#eef2f7;--tx-cat-text:#4f6370">
+<div class="post" data-category="" style="--tx-post-bg:#fffdfa;--tx-post-text:#4f6370;--tx-cat-bg:#eef2f7;--tx-cat-text:#4f6370;--tx-title-color:#615B7E">
     <a href="/2026/04/04/hello/">
         <h2 class="post-title">第一篇博客</h2>
     </a>
@@ -212,13 +203,7 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <h1 id="这个博客是干嘛的"><a href="#这个博客是干嘛的" class="headerlink" title="这个博客是干嘛的"></a>这个博客是干嘛的</h1><p>这个博客其实没什么特别的定位，没有高超的硬核技术，也没有高深的哲理文章，这就是我用来随便记东西的地方。</p>
-<p>所以这里的内容应该会比较杂。</p>
-<p>可能有时候是学习笔记，比如我将来上大学抑或是当下学习的；<br>有时候是一些折腾记录，比如环境、博客、乱七八糟的问题；<br>也可能什么都不是，就是突然想到点什么，随手写下来，甚至可能有点莫名其妙。</p>
-<p>这里的东西不会专门整理成给别人看的那种文章，大多数时候就是写给我自己看的。有的可能很短，有的可能没什么逻辑，有的甚至写完过几天我自己都得重新看一遍。</p>
-<p>对错也不太重要。<br>有些东西现在觉得是对的，以后可能会改；<br>有些写错了，也懒得动，就放着。</p>
-<p>总之，这里更像一个“存东西”的地方，而不是一个“展示”的地方。</p>
-<p>如果以后哪天翻回来还能看懂，那就已经挺值了。</p>
+            <p>这个博客是干嘛的</p>
 
             
         </div>
@@ -228,6 +213,47 @@
         
     </div>
     <a href="/2026/04/04/hello/" class="go-post" style="background:#eef2f7;color:#4f6370">更多</a>
+</div>
+
+
+<div class="post" data-category="diary" style="--tx-post-bg:#1A1A2E;--tx-post-text:#ffffff;--tx-cat-bg:#2D475E;--tx-cat-text:#c0c0c0;--tx-title-color:#FFEAA7">
+    <a href="/2025/06/11/preface/">
+        <h2 class="post-title">前记</h2>
+    </a>
+    <div class="category-and-date">
+        
+        
+        <span class="category">
+            <a href="/categories/diary/" style="color:#c0c0c0">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                diary
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/6/11
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>日记的前记</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        
+    </div>
+    <a href="/2025/06/11/preface/" class="go-post" style="background:#2D475E;color:#c0c0c0">更多</a>
 </div>
 
 
@@ -246,7 +272,7 @@
         <div id="card-style">
     <div id="card-div">
         <div class="avatar">
-            <img src="/images/avatar.gif" alt="avatar" />
+            <img src="/images/headf.jpg" alt="avatar" />
         </div>
         <div class="name">mingyiaz</div>
         <div class="description">
@@ -256,6 +282,10 @@
         
         
         <div class="friend-links">
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://www.pixiv.net/artworks/126823999">首页背景图</a>
+            </div>
             
             <div class="friend-link">
                 <a target="_blank" rel="noopener" href="https://jonct.top/">Jonct&#39;s Blog</a>
